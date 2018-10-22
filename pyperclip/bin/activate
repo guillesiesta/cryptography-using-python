@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/guillesiesta/Escritorio/cryptography-python/pyperclip"
+VIRTUAL_ENV="/home/guillesiesta/Escritorio/cryptography-using-python/pyperclip"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

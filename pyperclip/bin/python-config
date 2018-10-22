@@ -1,4 +1,4 @@
-#!/home/guillesiesta/Escritorio/cryptography-python/pyperclip/bin/python
+#!/home/guillesiesta/Escritorio/cryptography-using-python/pyperclip/bin/python
 
 import sys
 import getopt
