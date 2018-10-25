@@ -4,7 +4,7 @@
 import math, pyperclip
 
 def main():
-    myMessage = 'Cenoonommstmme oo snnio. s s c '
+    myMessage = 'Cenoonommstmme oo snnio. s s c'
     myKey = 8
 
     plaintext = decryptMessage(myKey, myMessage)
@@ -22,7 +22,7 @@ def decryptMessage(key, message):
     # of strings. First, we need to calculate a few values.
 
     # The number of "columns" in our transposition grid:
-    numOfColumns =  key
+    numOfColumns = int(math.ceil(len(message) / key))+1
     # The number of "rows" in our grid will need:
     numOfRows = key
     # The number of "shaded boxes" in the last "column" of the grid:
@@ -45,7 +45,6 @@ def decryptMessage(key, message):
         if (col == numOfColumns) or (col == numOfColumns - 1 and row >= numOfRows - numOfShadedBoxes):
             col = 0
             row += 1
-
     return ''.join(plaintext)
 
 # If transpositionDecrypt.py is run (instead of imported as a module) call
